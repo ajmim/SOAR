@@ -71,8 +71,6 @@ public class Database {
         courses.remove(course);
     }
 
-    public ArrayList<Course> getCourses() {return courses;}
-
     public ArrayList<Student> getStudents() {
         return students;
     }

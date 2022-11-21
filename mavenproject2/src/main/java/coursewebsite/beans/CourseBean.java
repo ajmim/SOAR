@@ -24,9 +24,12 @@ public class CourseBean implements Serializable {
             if (c.getTitle().equals(courseTitle)) {
                 return true;
             }
+            
         }
         return false;
     }
+    public ArrayList<Course> getCourses() {return courses;}
+    
     public boolean doesCourseExistInApp() {
         for (Course f : Database.getInstance().getCourses()) {
             if (f.getTitle().equals(courseTitle)) {
